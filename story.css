@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}       
+
+body{
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#container{
+    height: 480px;
+    width: 330px;
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.storiyan{
+    height: 100px;
+    width: 91%;
+    border-bottom: 2px solid #dadada ;
+    padding: 15px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.storiyan::-webkit-scrollbar{
+    display: none;
+}
+
+.story{
+    height: 90px;
+    width: 90px;
+    border: 2px solid brown;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#full-screen{
+    height: 100%;
+    width: 100%;
+    background-image: auto;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: none;
+}

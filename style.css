@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: cornflowerblue;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+#card{
+    margin: 5rem 40vw ;
+    width: 320px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#card img{
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+
+#card h1{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+#card h5{
+    color: rgb(158, 59, 59);
+    margin: 20px;
+    font-size: 25px;
+}
+
+#card button{
+    background-color: cadetblue;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    width: 60%;
+    font-size: 18px;
+}
+
+/* #card #remove{
+    background-color: #dadada;
+    color: #111;
+} */
+
+#card i{
+    font-size: 55px;
+    color: rgb(208, 35, 35);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 28%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform ease 0.5s;
+}
+
+.insta-story button {
+    margin: 10vh 44vw;
+    width: 10rem;
+    height: 40px;
+    border: none;
+    background-color: brown;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.insta-story a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.cursor{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    mix-blend-mode: difference;
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.2s ;
+}
+
+.element{
+    display: block;
+}
+
+.elem{
+    height: 15vh;
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    text-align: center;
+    border-bottom: 2px solid black;
+    margin: 20px 0;
+}
+
+.elem h1{
+    padding-top: 40px;
+    mix-blend-mode: difference;  
+    color: #fff;
+    z-index: 8;
+    font-size: 40px;
+} 
+
+.elem img{
+    padding: 5px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    opacity: 0;
+    transition: all linear 0.1s;
+}
